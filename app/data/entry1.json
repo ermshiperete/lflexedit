@@ -1,0 +1,8 @@
+{
+"guid": "entry1",
+"entry": { "th": "Thai word 1", "th-fonipa": "Thai ipa 1" },
+"senses": [
+{ "definition": {"en":"english sense 1", "fr":"french sense 1"}},
+{ "definition": {"en":"english sense 2", "fr":"french sense 2"}}
+]
+}

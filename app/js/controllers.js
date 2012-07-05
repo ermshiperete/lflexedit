@@ -2,8 +2,8 @@
 
 /* Controllers */
 
-function ListController($scope, lfDictionaryService, lfDictionaryBrowseConfig) {
-  $scope.config = lfDictionaryBrowseConfig;
+function ListController($scope, lfDictionaryService, lfDictionaryListConfig) {
+  $scope.config = lfDictionaryListConfig;
   $scope.response = lfDictionaryService.query();
 //	$http.get('data/browse.json').success(function(data) {
 //		$scope.phones = data;
@@ -11,12 +11,13 @@ function ListController($scope, lfDictionaryService, lfDictionaryBrowseConfig) {
 
 
 }
-ListController.$inject = ['$scope', 'lfDictionaryService', 'lfDictionaryBrowseConfig'];
+ListController.$inject = ['$scope', 'lfDictionaryService', 'lfDictionaryListConfig'];
 
-function DetailController($scope, lfDictionaryEditConfig) {
-  $scope.forms = lfDictionaryEditConfig;
+function DetailController($scope, $routeParams, lfDictionaryService, lfDictionaryDetailConfig) {
+  $scope.config = lfDictionaryDetailConfig;
+  $scope.response = lfDictionaryService.query({entryId: $routeParams.entryId});
     //$scope.$route = $route;
     //$scope.$location = $location;
     //$scope.$routeParams = $routeParams;
 }
-DetailController.$inject = ['$scope', 'lfDictionaryEditConfig'];
+DetailController.$inject = ['$scope', '$routeParams', 'lfDictionaryService', 'lfDictionaryDetailConfig'];

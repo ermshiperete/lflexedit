@@ -8,9 +8,16 @@
 var lfServices = angular.module('lfDictionaryServices', ['ngResource']);
 lfServices.value('version', '0.1');
 
-lfServices.value('lfDictionaryBrowseConfig', {
+lfServices.value('lfDictionaryListConfig', {
   vernacular: 'th',
   ipa: 'th-fonipa'
+});
+
+lfServices.value('lfDictionaryDetailConfig', {
+  fields: [
+           { label: "Word", level: "entry", type: "multitext", forms: ["th", "th-fonipa"] },
+           { label: "Definition", level: "sense", type: "multitext", forms: ["en", "fr"] }
+  ]
 });
 
 lfServices.factory('lfDictionaryService', function($resource) {
