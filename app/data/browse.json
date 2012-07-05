@@ -1,0 +1,16 @@
+{
+"sha": "thesha5",
+"entries": [
+{
+"guid": "abcd",
+"entry": { "th": "Thai word 1", "th-fonipa": "Thai ipa 1" },
+"definition": {"en":"d", "fr":"fr"}
+},{
+"guid": "abcd",
+"entry": { "th": "Thai word 2", "th-fonipa": "Thai ipa 2" }
+},{
+"guid": "abcd",
+"entry": { "th": "Thai word 3", "th-fonipa": "Thai ipa 3" }
+},{}
+]
+}
