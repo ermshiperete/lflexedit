@@ -2,15 +2,17 @@
 "sha": "thesha5",
 "entries": [
 {
-"guid": "abcd",
+"guid": "entry1",
 "entry": { "th": "Thai word 1", "th-fonipa": "Thai ipa 1" },
-"definition": {"en":"d", "fr":"fr"}
+"definition": {"en":"english 1", "fr":"french 1"}
 },{
-"guid": "abcd",
-"entry": { "th": "Thai word 2", "th-fonipa": "Thai ipa 2" }
+"guid": "entry2",
+"entry": { "th": "Thai word 2", "th-fonipa": "Thai ipa 2" },
+"definition": {"en":"english 2", "fr":"french 2"}
 },{
-"guid": "abcd",
-"entry": { "th": "Thai word 3", "th-fonipa": "Thai ipa 3" }
-},{}
+"guid": "entry3",
+"entry": { "th": "Thai word 3", "th-fonipa": "Thai ipa 3" },
+"definition": {"en":"english 3", "fr":"french 3"}
+}
 ]
 }

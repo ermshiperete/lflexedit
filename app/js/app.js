@@ -7,4 +7,4 @@ lfDbeModule.config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/Browse', {templateUrl: 'partials/Browse.html', controller: BrowseController});
     $routeProvider.when('/Edit', {templateUrl: 'partials/Edit.html', controller: EditController});
     $routeProvider.otherwise({redirectTo: '/Browse'});
-  }]);
+}]);

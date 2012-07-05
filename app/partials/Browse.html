@@ -1,6 +1,13 @@
-<p>This is the partial for browse view.</p>
-<div ng-repeat="entry in response.entries">
-<pre>{{entry}}</pre>
+<div id="padding">
+<h2>Search Results</h2>
+<div id="searchResults">
+<div ng-repeat="entry in response.entries" class="{{ {true:'r0', false:'r1'}[$index % 2 == 0] }}{{ {true:' rFirst', false:''}[$index == 0] }}">
+  <div class="meanings">
+  {{entry.entry[config.ipa]}}
+  </div>
+  <a ng-href="#/Edit/{{entry.guid}}">{{entry.entry[config.vernacular]}}</a>
+</div>
+</div>
 </div>
 <pre>config={{config | json}}</pre>
 <pre>response={{response | json}}</pre>
