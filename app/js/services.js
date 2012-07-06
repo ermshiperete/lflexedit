@@ -14,10 +14,21 @@ lfServices.value('lfDictionaryListConfig', {
 });
 
 lfServices.value('lfDictionaryDetailConfig', {
-  fields: [
-           { label: "Word", level: "entry", type: "multitext", forms: ["th", "th-fonipa"] },
-           { label: "Definition", level: "sense", type: "multitext", forms: ["en", "fr"] }
-  ]
+  common: {
+    vernacular: "th",
+    ipa: "th-fonipa"
+  },
+  entry: {
+      word: { label: "Word", type: "multitext", forms: ["th", "th-fonipa"] },
+  },
+  sense: {
+      definition: { label: "Definition", type: "multitext", forms: ["en", "fr"] },
+      partofspeech: { label: "Part of Speech", type: "trait", forms: ["en"] }
+  },
+  example: {
+      example: { label: "Example", type: "multitext", forms: ["en", "fr"] },
+    translation: { label: "Translation", type: "multitext", forms: ["en", "fr"] }
+  }
 });
 
 lfServices.factory('lfDictionaryService', function($resource) {

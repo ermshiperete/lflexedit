@@ -1,4 +1,22 @@
-<p>This is the partial for the detail view.</p>
-<hr/>
+<div id="padding">
+<div>
+<h1 class="headWord">{{response.entry[config.common.vernacular]}}</h1>
+<p class="ipa">{{response.entry[config.common.ipa]}}</p>
+<div ng-repeat="sense in response.senses">
+<p class="partOfSpeech">[&nbsp;{{sense.partofspeech[config.sense.partofspeech.forms[0]]}}&nbsp;]</p>
+<div id="senseFrame">
+<!--  if image -->
+<img class="senseImage" src="" width="200" height="150" />
+<p ng-repeat="form in config.sense.definition.forms" class="definition">{{sense.definition[form]}}</p>
+<div class="exampleFrame">
+<h2>Examples</h2>
+<div class="{{ {true:'r0', false:'r1'}[$index % 2 == 0] }}{{ {true:' rFirst', false:''}[$index == 0] }}">
+{{}}
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><hr/>
 <pre>config={{config | json}}</pre>
 <pre>response={{response | json}}</pre>
