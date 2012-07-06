@@ -8,19 +8,19 @@ body, p {
 	color: #333;
 }
 
+body {
+}
+
 div#frame {
-	width: 95%;
-	max-width: 1050px;
-	min-width: 965px;
-	border-left: solid 2px
-	#999;
-	border-right: solid 2px
-	#999;
-	background-color:
-	white;
-	margin: auto;
+	width: 100%;
+	xmax-width: 430px;
+	min-width: 400px;
+	border-left: solid 2px #999;
+	border-right: solid 2px #999;
+	background-color: white;
+	xmargin: auto;
 	padding-left: 25px;
-	min-height: 100%;
+	xmin-height: 100%;
 }
 
 div#padding {

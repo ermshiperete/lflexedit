@@ -2,11 +2,13 @@
 
 /* Controllers */
 
-function ListController($scope, lfDictionaryService, lfDictionaryListConfig) {
+function ListController($scope, lfDictionaryService, lfDictionaryListConfig, $window) {
   $scope.config = lfDictionaryListConfig;
   $scope.response = lfDictionaryService.query();
+  $scope.width = $window.innerWidth;
+  $scope.height = $window.innerHeight;
 }
-ListController.$inject = ['$scope', 'lfDictionaryService', 'lfDictionaryListConfig'];
+ListController.$inject = ['$scope', 'lfDictionaryService', 'lfDictionaryListConfig', '$window'];
 
 function DetailController($scope, $routeParams, lfDictionaryService, lfDictionaryDetailConfig) {
   var c = lfDictionaryDetailConfig;

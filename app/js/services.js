@@ -6,7 +6,7 @@
 // Demonstrate how to register services
 // In this case it is a simple value service.
 var lfServices = angular.module('lfDictionaryServices', ['ngResource']);
-lfServices.value('version', '0.1');
+lfServices.value('version', '0.03');
 
 lfServices.value('lfDictionaryListConfig', {
   vernacular: 'th',

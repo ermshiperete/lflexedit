@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>My AngularJS App</title>
+  <meta name=viewport content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="css/Site.css"/>
 </head>
 <body>
+<div id="frame">
   <ul class="menu">
     <li><a href="#/List">List</a></li>
-    <li><a href="#/Detail">Detail</a></li>
+    <!-- <li><a href="#/Detail">Detail</a></li>  -->
   </ul>
-
-<div>
 
   <div ng-view></div>
 
@@ -25,6 +25,6 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
-  </div>
+</div>
 </body>
 </html>
