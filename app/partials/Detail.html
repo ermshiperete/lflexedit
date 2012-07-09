@@ -6,9 +6,9 @@
 <p class="partOfSpeech">[&nbsp;{{sense.partofspeech[config.sense.partofspeech.forms[0]]}}&nbsp;]</p>
 <div id="senseFrame">
 <!--  if image -->
-<img class="senseImage" src="" width="200" height="150" />
+<img ng-repeat="image in sense.image" class="senseImage" src="" width="150" height="112" />
 <p ng-repeat="form in config.sense.definition.forms" class="definition">{{sense.definition[form]}}</p>
-<div class="exampleFrame">
+<div ng-repeat="example in sense.examples" class="exampleFrame">
 <h2>Examples</h2>
 <div class="{{ {true:'r0', false:'r1'}[$index % 2 == 0] }}{{ {true:' rFirst', false:''}[$index == 0] }}">
 {{}}
@@ -18,8 +18,8 @@
 </div>
 </div>
 </div>
-<!--
 <hr/>
+<!--
 <pre>config={{config | json}}</pre>
 <pre>response={{response | json}}</pre>
 -->

@@ -13,14 +13,8 @@ body {
 
 div#frame {
 	width: 100%;
-	xmax-width: 430px;
-	min-width: 400px;
-	border-left: solid 2px #999;
-	border-right: solid 2px #999;
 	background-color: white;
-	xmargin: auto;
-	padding-left: 25px;
-	xmin-height: 100%;
+	margin: auto;
 }
 
 div#padding {
@@ -89,9 +83,9 @@ div#senseFrame {
 
 .senseImage {
 	float: right;
-	margin: 0 0 10px 10px;
+	margin: 0px 0px 0px 0px;
 }
 
 div.exampleFrame {
-	margin: 0 220px 0 0;
+	margin: 0px 170px 0px 0px;
 }
